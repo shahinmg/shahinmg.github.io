@@ -3,7 +3,7 @@ permalink: /
 title: "About me"
 author_profile: true
 header:
-  image: big_berg_banner.jpg     # plain image banner, no text overlaid. Path is relative to /images/
+  image: big_berg_banner_crop.jpg  # plain image banner, no text overlaid. Path is relative to /images/
   # caption: "Helheim Glacier, East Greenland"
 redirect_from: 
   - /about/
