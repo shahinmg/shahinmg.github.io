@@ -24,14 +24,18 @@
     top: $masthead-height;
     max-height: calc(100vh - #{$masthead-height});
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
-
-    // Line the avatar up with the page title beside it: drop the portrait-only
-    // nudge above, and pull back the avatar's own 5px padding + 1px border.
-    margin-top: -6px;
   }
 
   @include breakpoint($large) {
     @include span(2 of 12);
+
+    // ---- Vertical alignment knob -------------------------------------------
+    // Shifts the avatar/side panel against the page title beside it.
+    // MORE negative = higher, less negative = lower. Applies from 925px up,
+    // and also cancels the portrait-orientation `margin-top: 1em` above.
+    margin-top: -6px;
+    // ------------------------------------------------------------------------
+
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
